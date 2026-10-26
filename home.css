@@ -1,0 +1,251 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
+
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #1D232C;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    color: #1D232C;
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+.side-navbar{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    color: #ffff;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 2s;
+    
+}
+.side-navbar-links a{
+    color: #ffff;
+    text-decoration: none;
+}
+.side-navbar-links a:hover{
+    color: #ffff;
+    text-decoration: underline;
+}
+.side-navbar-link{
+    margin-bottom: 20px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+
+}
+.header img{
+    height: 300px;
+    width: 300px;
+}
+.header-button{
+    background-color: #1D232C;
+    color: #ffff;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.service{
+    padding: 20px;
+}
+.service-box-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-box-2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.service-box-2 div{
+    background-color: #F2F4F7;
+    border-radius: 10px;
+    padding: 10px;
+}
+.new-arrival-container img{
+    height: 250px;
+    width: 200px;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 25%;
+}
+.new-arrival-container button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #1D232C;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 2px;
+}
+.news button{
+    margin-top: 10px;
+    color: #F2F4F7;
+    background-color: #1D232C;
+    border-radius: 10px;
+    padding: 10px;
+}
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #1D232C;
+    color: #F2F4F7;
+}
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    border: solid black 2px;
+    border-radius: 20px;
+}
+.product-search input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.product-box img{
+    height: 250px;
+    width: 200px;
+}
+.product-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+
+
+.contact-container{
+    display: flex;
+    height: 90%;
+    width: 90%;
+    background-color: black;
+    position: fixed;
+    border-radius: 10px;
+    top: 50px;
+    left: 60px;
+    flex-direction: column;
+}
+.contact-container h2{
+    color: white;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.contact-container p{
+    color: white;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.contact-container input{
+    width: 60%;
+    height: 10%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.contact-container input:focus{
+    outline: none;
+}
+.contact-container textarea{
+    width: 60%;
+    height: 30%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.contact-container textarea:focus{
+    outline: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+    .navbar-links{
+        display: none;
+    }
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .header img{
+        display: none;
+    }
+    .service-box-1{
+        display: none;
+    }
+    .service-box-2{
+        flex-direction: column;
+    }
+}
